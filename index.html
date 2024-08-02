@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Figuras Geométricas en A-Frame con Música</title>
+    <title>Figuras Geométricas en A-Frame con Música y Fondo 360</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script>
       AFRAME.registerComponent('dragndrop', {
@@ -40,11 +40,12 @@
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" dragndrop></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" dragndrop></a-cylinder>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+
+      <!-- Añadir fondo 360 -->
+      <a-sky src="Minecraft-Legends.jpg"></a-sky>
 
       <!-- Añadir música -->
       <a-sound src="song.mp3" autoplay="true" loop="true"></a-sound>
     </a-scene>
   </body>
 </html>
-
